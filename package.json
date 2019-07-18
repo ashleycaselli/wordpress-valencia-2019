@@ -1,0 +1,35 @@
+{
+  "name": "wordcamp-valencia-2019",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.9.0"
+  },
+  "scripts": {
+    "build": "gulp lint && gulp css",
+    "watch": "gulp",
+    "lint": "stylelint sass"
+  },
+  "devDependencies": {
+    "autoprefixer": "9.5.1",
+    "gulp": "4.0.1",
+    "gulp-livereload": "4.0.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "4.0.2",
+    "gulp-stylelint": "9.0.0",
+    "gulp-watch": "5.0.1",
+    "stylelint": "10.0.1",
+    "stylelint-config-wordpress": "14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/ashleycaselli/wordcamp-valencia-2019.git"
+  },
+  "author": "Blogestudio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ashleycaselli/wordcamp-valencia-2019/issues"
+  },
+  "homepage": "https://gitlab.com/ashleycaselli/wordcamp-valencia-2019#readme"
+}
