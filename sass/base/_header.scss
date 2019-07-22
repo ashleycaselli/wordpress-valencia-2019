@@ -76,8 +76,8 @@ body {
   width: auto;
   img {
     display: inline-block;
-    max-height: 80px;
     width: auto;
+    margin-top: -200px;
   }
 }
 
@@ -268,4 +268,18 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
   display: table-cell;
   height: 100%;
   vertical-align: bottom;
+}
+
+.site-branding {
+	background-image: url('/wp-content/uploads/sites/49/2019/07/WCvlcSLIDER.jpg');
+	background-repeat: no-repeat;
+	height: 600px;
+  background-size: 100% 100%;
+  background-position: center center;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
