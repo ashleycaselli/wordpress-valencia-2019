@@ -17,7 +17,7 @@ function css() {
 }
 
 function lint() {
-	return gulp.src( './sass/**/*.scss' )
+	return gulp.src( './sass/*.scss' )
 		.pipe( stylelint( {
 			reporters: [ {
 				formatter: 'string',
