@@ -24,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/ashleycaselli/wordcamp-valencia-2019.git"
+    "url": "git+ssh://git@github.com/ashleycaselli/wordcamp-valencia-2019.git"
   },
   "author": "Blogestudio",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/ashleycaselli/wordcamp-valencia-2019/issues"
+    "url": "https://github.com/ashleycaselli/wordcamp-valencia-2019/issues"
   },
-  "homepage": "https://gitlab.com/ashleycaselli/wordcamp-valencia-2019#readme"
+  "homepage": "https://github.com/ashleycaselli/wordcamp-valencia-2019"
 }
