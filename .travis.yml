@@ -3,6 +3,9 @@ node_js:
   - "stable"
 cache:
   directories:
+    - $HOME/.npm
     - "node_modules"
 script:
   - npm run build
+after_success:
+- sh travis-push.sh
