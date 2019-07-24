@@ -58,3 +58,69 @@
 }
 
 /* Ensure that placeholder icons are visible. */
+
+
+.home .site-branding .wrap {
+  text-align: center;
+}
+
+
+.page-one-column {
+  .panel-content {
+    .wrap {
+      max-width: 100%;
+      padding: 0px;
+      
+      .entry-header {
+        display: none;
+      }
+      .destacado_home,
+      .normal_home {
+        max-width: 1000px;
+        margin: auto;
+      }
+      .wrap_destacado_home {
+        min-height: auto;
+	      padding: 2em 0;
+	      color: $blue3;
+	      margin-bottom: 0;
+	      background-color: $yellow1;
+      }
+      h2 {
+        padding: 1em 0;
+		    color: $blue3;
+		    font-size:2em;
+      }
+      p {
+        padding: 0.5em 0;
+		    color: $black1;
+      }
+      .columns_destacado_home {
+        max-width: 1000px;
+        margin: auto;
+        background-color: $yellow1;;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 48em) {
+	.twentyseventeen-front-page.has-header-image .custom-header-image {
+	  height: 70vh;
+	}
+}
+
+.has-header-image.twentyseventeen-front-page .custom-header {
+  height: 50vh;
+}
+
+
+.home .custom-header .custom-header-media img {
+  transform:translateY(-30%) !important;
+}
+
+/* Recursos */
+.wp-block-button__link {
+  border-radius: 5px;
+}
