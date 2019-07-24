@@ -70,14 +70,15 @@ body {
 }
 
 .custom-logo-link {
-  display: inline-block;
-  padding-right: 1em;
-  vertical-align: middle;
+  display: block;
+  max-height: auto;
   width: auto;
+  padding: 0;
   img {
-    display: inline-block;
-    max-height: 80px;
+    max-height: 250px;
     width: auto;
+    position: relative;
+    filter: brightness(0) invert(1);
   }
 }
 
