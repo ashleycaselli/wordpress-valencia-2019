@@ -44,7 +44,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 18.0 SVGs Fallbacks
 19.0 Media Queries
 20.0 Print
-21.0 HACKS
 --------------------------------------------------------------*/
 /*-------------------------------------------------------------
 1.0 Normalize
@@ -1159,7 +1158,7 @@ a:hover .nav-title {
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #222;
+  color: #fff;
   display: none;
   font-size: 14px;
   font-size: 0.875rem;
@@ -1318,14 +1317,16 @@ body.has-header-image .site-description, body.has-header-video .site-description
   opacity: 0.8; }
 
 .custom-logo-link {
-  display: inline-block;
-  padding-right: 1em;
-  vertical-align: middle;
-  width: auto; }
+  display: block;
+  max-height: auto;
+  width: auto;
+  padding: 0; }
   .custom-logo-link img {
-    display: inline-block;
-    max-height: 80px;
-    width: auto; }
+    max-height: 250px;
+    width: auto;
+    position: relative;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1); }
 
 body.home.title-tagline-hidden.has-header-image .custom-logo-link img, body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
   max-height: 200px;
@@ -2909,7 +2910,7 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
   .home.blog.has-header-image .custom-header-media:before, .home.blog.has-header-video .custom-header-media:before {
     height: 33%; }
   .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media, .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media {
-    height: calc(100vh - 32px); }
+    height: calc(70vh - 32px); }
   .admin-bar.home.blog.has-header-image .custom-header-media, .admin-bar.home.blog.has-header-video .custom-header-media {
     height: calc(100vh - 32px); }
   .panel-content .wrap {
