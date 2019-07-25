@@ -3,7 +3,8 @@
 --------------------------------------------------------------*/
 
 .site-footer {
-  border-top: 1px solid $silver2;
+  color: $white2;
+  background-color: $black4;
   .wrap {
     padding-bottom: 1.5em;
     padding-top: 2em;
@@ -11,6 +12,9 @@
   .widget-area {
     padding-bottom: 2em;
     padding-top: 2em;
+  }
+  h2.widget-title {
+    color: $white1;
   }
 }
 
