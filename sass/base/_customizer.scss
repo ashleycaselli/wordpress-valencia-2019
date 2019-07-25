@@ -153,24 +153,25 @@
     position: relative;
     overflow: hidden;
     background: $orange1;
+    text-align: center;
+    input {
+        padding: .7em 0;
+        width: 100%;
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.8;
+        height: 50px;
+        font-weight: 400;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+        background: transparent;
+    }
   }
   form > div {
     text-align: center;
   }
 
-  #subscribe-submit input {
-      padding: .7em 0;
-      width: 100%;
-      font-size: 16px;
-      font-size: 1rem;
-      line-height: 1.8;
-      height: 50px;
-      font-weight: 400;
-      text-transform: uppercase;
-      position: relative;
-      z-index: 1;
-      background: transparent;
-  }
 }
 
 button[name="jetpack_subscriptions_widget"] {
@@ -178,6 +179,9 @@ button[name="jetpack_subscriptions_widget"] {
 }
 
 .jetpack_widget_social_icons a {
-  color: #ed6933;
+  color: $orange2;
   box-shadow: none !important;
+  &:hover, &:focus {
+    color: $orange2;
+  }
 }
