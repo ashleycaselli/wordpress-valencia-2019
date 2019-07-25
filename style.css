@@ -1086,9 +1086,9 @@ a:hover .nav-title {
 12.0 Navigation
 --------------------------------------------------------------*/
 .navigation-top {
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  border-top: 1px solid #eee;
+  background: #08364f;
+  border-bottom: 2px solid #08364f;
+  border-top: 2px solid #08364f;
   font-size: 16px;
   font-size: 1rem;
   position: relative; }
@@ -1096,10 +1096,11 @@ a:hover .nav-title {
     max-width: 1000px;
     padding: 0; }
   .navigation-top a {
-    color: #222;
+    color: #fff;
     font-weight: 600;
     -webkit-transition: color 0.2s;
-    transition: color 0.2s; }
+    transition: color 0.2s;
+    text-transform: uppercase; }
   .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
     color: #767676; }
 
@@ -2539,6 +2540,51 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
   visibility: visible; }
 
 /* Ensure that placeholder icons are visible. */
+.home .site-branding .wrap {
+  text-align: center; }
+
+.page-one-column .panel-content .wrap {
+  max-width: 100%;
+  padding: 0px; }
+  .page-one-column .panel-content .wrap .entry-header {
+    display: none; }
+  .page-one-column .panel-content .wrap .destacado_home,
+  .page-one-column .panel-content .wrap .normal_home {
+    max-width: 1000px;
+    margin: auto; }
+  .page-one-column .panel-content .wrap .wrap_destacado_home {
+    min-height: auto;
+    padding: 2em 0;
+    color: #094363;
+    margin-bottom: 0;
+    background-color: #fef5e3; }
+  .page-one-column .panel-content .wrap h2 {
+    padding: 1em 0;
+    color: #094363;
+    font-size: 2em; }
+  .page-one-column .panel-content .wrap p {
+    padding: 0.5em 0;
+    color: #000; }
+  .page-one-column .panel-content .wrap .columns_destacado_home {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fef5e3; }
+
+@media screen and (min-width: 48em) {
+  .twentyseventeen-front-page.has-header-image .custom-header-image {
+    height: 70vh; } }
+
+.has-header-image.twentyseventeen-front-page .custom-header {
+  height: 50vh; }
+
+.home .custom-header .custom-header-media img {
+  -webkit-transform: translateY(-30%) !important;
+          transform: translateY(-30%) !important; }
+
+/* Recursos */
+.wp-block-button__link {
+  border-radius: 5px; }
+
 /*--------------------------------------------------------------
 18.0 SVGs Fallbacks
 --------------------------------------------------------------*/
@@ -2639,8 +2685,6 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
   .panel-content .wrap {
     padding-bottom: 2em;
     padding-top: 3.5em; }
-  .page-one-column .panel-content .wrap {
-    max-width: 740px; }
   .panel-content .entry-header {
     margin-bottom: 4.5em; }
   .panel-content .recent-posts .entry-header {
