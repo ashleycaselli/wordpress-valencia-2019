@@ -70,12 +70,13 @@ body {
 }
 
 .custom-logo-link {
-  display: block;
+  display: inline-block;
   max-height: auto;
   width: auto;
-  padding: 0;
+  vertical-align: middle;
   img {
-    max-height: 250px;
+    display: inline-block;
+    max-height: 80px;
     width: auto;
     position: relative;
     filter: brightness(0) invert(1);

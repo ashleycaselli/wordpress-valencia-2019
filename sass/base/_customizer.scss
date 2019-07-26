@@ -60,10 +60,25 @@
 /* Ensure that placeholder icons are visible. */
 
 
-.home .site-branding .wrap {
-  text-align: center;
+.home {
+  .custom-header .custom-header-media img {
+    transform: translateY(-30%) !important;
+  }
+  .site-branding .wrap {
+    text-align: center;
+  }
+  .custom-logo-link {
+    display: block;
+		max-height: auto;
+		width: auto;
+    padding: 0;
+    img {
+      max-height: 250px;
+		  width: auto;
+		  position: relative;
+    }
+  }
 }
-
 
 .page-one-column {
   .panel-content {
@@ -115,10 +130,6 @@
   height: 50vh;
 }
 
-
-.home .custom-header .custom-header-media img {
-  transform:translateY(-30%) !important;
-}
 
 /* Recursos */
 .wp-block-button__link {
