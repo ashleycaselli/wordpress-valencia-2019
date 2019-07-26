@@ -1099,7 +1099,7 @@ a:hover .nav-title {
     transition: color 0.2s;
     text-transform: uppercase; }
   .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
-    color: #767676; }
+    color: #ff6900; }
 
 .main-navigation {
   clear: both;
@@ -1315,12 +1315,13 @@ body.has-header-image .site-description, body.has-header-video .site-description
   opacity: 0.8; }
 
 .custom-logo-link {
-  display: block;
+  display: inline-block;
   max-height: auto;
   width: auto;
-  padding: 0; }
+  vertical-align: middle; }
   .custom-logo-link img {
-    max-height: 250px;
+    display: inline-block;
+    max-height: 80px;
     width: auto;
     position: relative;
     -webkit-filter: brightness(0) invert(1);
@@ -2539,8 +2540,22 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
   visibility: visible; }
 
 /* Ensure that placeholder icons are visible. */
+.home .custom-header .custom-header-media img {
+  -webkit-transform: translateY(-30%) !important;
+          transform: translateY(-30%) !important; }
+
 .home .site-branding .wrap {
   text-align: center; }
+
+.home .custom-logo-link {
+  display: block;
+  max-height: auto;
+  width: auto;
+  padding: 0; }
+  .home .custom-logo-link img {
+    max-height: 250px;
+    width: auto;
+    position: relative; }
 
 .page-one-column .panel-content .wrap {
   max-width: 100%;
@@ -2575,10 +2590,6 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
 
 .has-header-image.twentyseventeen-front-page .custom-header {
   height: 50vh; }
-
-.home .custom-header .custom-header-media img {
-  -webkit-transform: translateY(-30%) !important;
-          transform: translateY(-30%) !important; }
 
 /* Recursos */
 .wp-block-button__link {
