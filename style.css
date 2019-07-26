@@ -1105,7 +1105,7 @@ a:hover .nav-title {
   clear: both;
   display: block; }
   .main-navigation ul {
-    background: #fff;
+    background: #08364f;
     list-style: none;
     margin: 0;
     padding: 0 1.5em;
@@ -1345,7 +1345,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 .has-header-image.twentyseventeen-front-page .custom-header, .has-header-video.twentyseventeen-front-page .custom-header, .has-header-image.home.blog .custom-header, .has-header-video.home.blog .custom-header {
   display: table;
   height: 300px;
-  height: 75vh;
+  height: 50vh;
   width: 100%; }
 
 .custom-header-media {
@@ -2584,13 +2584,6 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
     margin: auto;
     background-color: #fef5e3; }
 
-@media screen and (min-width: 48em) {
-  .twentyseventeen-front-page.has-header-image .custom-header-image {
-    height: 70vh; } }
-
-.has-header-image.twentyseventeen-front-page .custom-header {
-  height: 50vh; }
-
 /* Recursos */
 .wp-block-button__link {
   border-radius: 5px; }
@@ -2645,6 +2638,52 @@ button[name="jetpack_subscriptions_widget"] {
           box-shadow: none !important; }
   .jetpack_widget_social_icons a:hover, .jetpack_widget_social_icons a:focus {
     color: #ed6933; }
+
+/** Sponsors **/
+.wcorg-sponsor-description {
+  text-align: center; }
+
+.wcorg-sponsor-level-platino,
+.wcorg-sponsor-level-oro,
+.wcorg-sponsor-level-plata,
+.wcorg-sponsor-level-bronce,
+.wcorg-sponsor-level-micro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .wcorg-sponsor-level-platino h2,
+  .wcorg-sponsor-level-oro h2,
+  .wcorg-sponsor-level-plata h2,
+  .wcorg-sponsor-level-bronce h2,
+  .wcorg-sponsor-level-micro h2 {
+    display: block;
+    width: 100%;
+    text-align: center; }
+
+.wcorg-sponsor-level-platino > .wcorg-sponsor {
+  width: 100%; }
+
+.wcorg-sponsor-level-oro > .wcorg-sponsor {
+  width: 49%; }
+
+.wcorg-sponsor-level-plata > .wcorg-sponsor {
+  width: 32%; }
+
+.wcorg-sponsor-level-bronce > .wcorg-sponsor,
+.wcorg-sponsor-level-micro > .wcorg-sponsor {
+  width: 24%; }
 
 /*--------------------------------------------------------------
 18.0 SVGs Fallbacks
@@ -2804,7 +2843,8 @@ button[name="jetpack_subscriptions_widget"] {
     position: absolute;
     width: 100%; }
   .has-header-image.twentyseventeen-front-page .custom-header, .has-header-video.twentyseventeen-front-page .custom-header, .has-header-image.home.blog .custom-header, .has-header-video.home.blog .custom-header {
-    display: block; }
+    display: block;
+    height: 70vh; }
   .has-header-video.twentyseventeen-front-page .custom-header, .has-header-image.home.blog .custom-header, .has-header-video.home.blog .custom-header {
     height: auto; }
   .custom-header-media {
