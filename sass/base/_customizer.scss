@@ -184,3 +184,52 @@ button[name="jetpack_subscriptions_widget"] {
     color: $orange2;
   }
 }
+
+
+/** Sponsors **/
+
+.wcorg-sponsor-description {
+  text-align: center;
+}
+
+.wcorg-sponsor-level-platino,
+.wcorg-sponsor-level-oro,
+.wcorg-sponsor-level-plata,
+.wcorg-sponsor-level-bronce,
+.wcorg-sponsor-level-micro {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.wcorg-sponsor-level-platino {
+  > .wcorg-sponsor {
+    width: 100%;
+  }
+}
+
+.wcorg-sponsor-level-oro {
+  > .wcorg-sponsor {
+    width: 49%;
+  }
+}
+
+.wcorg-sponsor-level-plata {
+  > .wcorg-sponsor {
+    width: 32%;
+  }
+}
+
+.wcorg-sponsor-level-bronce,
+.wcorg-sponsor-level-micro {
+  > .wcorg-sponsor {
+    width: 24%;
+  }
+}
