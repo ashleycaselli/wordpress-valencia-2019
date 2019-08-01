@@ -2917,7 +2917,7 @@ button[name="jetpack_subscriptions_widget"] {
   .site-branding {
     margin-bottom: 0; }
   .has-header-image.twentyseventeen-front-page .site-branding, .has-header-video.twentyseventeen-front-page .site-branding, .has-header-image.home.blog .site-branding, .has-header-video.home.blog .site-branding {
-    bottom: 0;
+    bottom: 20%;
     display: block;
     left: 0;
     height: auto;
