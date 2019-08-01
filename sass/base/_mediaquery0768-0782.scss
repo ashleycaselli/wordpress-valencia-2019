@@ -5,3 +5,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 425px) {
+	.list-social li {
+		width: 100%;
+		max-width: 80%;
+		margin: 0 auto;
+    padding: 30px;
+    i {
+      padding-bottom: 5px;
+    }
+	}
+	
+  .wcorg-sponsor-level-oro > .wcorg-sponsor,
+  .wcorg-sponsor-level-plata > .wcorg-sponsor,
+	.wcorg-sponsor-level-bronce > .wcorg-sponsor,
+	.wcorg-sponsor-level-micro > .wcorg-sponsor {
+	  width: 100%;
+	}
+}

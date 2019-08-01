@@ -66,6 +66,13 @@
   }
   .site-branding .wrap {
     text-align: center;
+    .site-title {
+      display: none;
+    }
+    .site-description {
+      color: $blue4;
+      font-weight: bold;
+    }
   }
   .custom-logo-link {
     display: block;
@@ -84,7 +91,7 @@
   .panel-content {
     .wrap {
       max-width: 100%;
-      padding: 0px;
+      padding: 0;
 
       .entry-header {
         display: none;
@@ -198,6 +205,10 @@ button[name="jetpack_subscriptions_widget"] {
 .wcorg-sponsor-level-bronce,
 .wcorg-sponsor-level-micro {
   display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -206,30 +217,78 @@ button[name="jetpack_subscriptions_widget"] {
     display: block;
     width: 100%;
     text-align: center;
+    padding: 2em 0;
   }
 }
 
+.wcb_widget_sponsors .sponsor-level h4 {
+  display: block;
+	width: 100%;
+	text-align: center;
+	padding: 2em 0;
+}
+
+.wcb_widget_sponsors .sponsor-level {
+  display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+	text-decoration: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-webkit-transition: none;
+  transition: none;
+  
+  .sponsor-logo {
+    text-decoration: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.wcorg-sponsor-level-bronce,
+.wcorg-sponsor-level-micro {
+	justify-content: left;
+}
+
+
 .wcorg-sponsor-level-platino {
-  > .wcorg-sponsor {
+  > .wcorg-sponsor > .sponsor-logo {
     width: 100%;
   }
 }
 
 .wcorg-sponsor-level-oro {
-  > .wcorg-sponsor {
+  > .wcorg-sponsor > .sponsor-logo {
     width: 49%;
   }
 }
 
 .wcorg-sponsor-level-plata {
-  > .wcorg-sponsor {
+  > .wcorg-sponsor > .sponsor-logo {
     width: 32%;
   }
 }
 
 .wcorg-sponsor-level-bronce,
 .wcorg-sponsor-level-micro {
-  > .wcorg-sponsor {
+  > .wcorg-sponsor > .sponsor-logo {
     width: 24%;
+  }
+}
+
+.wcorg-sponsor {
+  padding: 1em;
+  h3 {
+    display: none;
   }
 }

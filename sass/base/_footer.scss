@@ -4,7 +4,7 @@
 
 .site-footer {
   color: $white2;
-  background-color: $black4;
+  background-color: $blue4;
   .wrap {
     padding-bottom: 1.5em;
     padding-top: 2em;
@@ -72,6 +72,43 @@
     padding: 0 0.2em 0 0.4em;
     &::before {
       content: '\002f';
+    }
+  }
+}
+
+.list-social {
+  list-style: none;
+	text-align: center;
+	max-width: 1024px;
+  margin: 0 auto !important;
+  li {
+    width: 20%;
+	  max-width: 30%;
+	  padding: .5em 30px 2em !important;
+    display: inline-block;
+    vertical-align: middle;
+    a {
+      color: $white1 !important;
+	    text-decoration: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      -webkit-transition: none;
+    }
+    i {
+      font-size: 2.75em;
+	    padding-bottom: 10px;
+    }
+  }
+}
+
+#nav_menu-3 {
+  text-align: center;
+  li {
+    display: inline-block;
+    padding: 1em;
+    color: $white1;
+    a {
+      color: $white1;
     }
   }
 }
