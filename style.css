@@ -349,7 +349,7 @@ template, [hidden] {
 --------------------------------------------------------------*/
 body, button, input, select, textarea {
   color: #333;
-  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-family: "Prompt", "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
   font-weight: 400;
@@ -736,17 +736,17 @@ input[type="submit"].secondary:hover, input[type="submit"].secondary:focus {
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder, :-moz-placeholder {
   color: #333;
-  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif; }
+  font-family: "Prompt", "Helvetica Neue", helvetica, arial, sans-serif; }
 
 ::-moz-placeholder {
   color: #333;
-  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-family: "Prompt", "Helvetica Neue", helvetica, arial, sans-serif;
   opacity: 1;
   /* Since FF19 lowers the opacity of the placeholder by default */ }
 
 :-ms-input-placeholder {
   color: #333;
-  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif; }
+  font-family: "Prompt", "Helvetica Neue", helvetica, arial, sans-serif; }
 
 /*--------------------------------------------------------------
 7.0 Formatting
@@ -1473,7 +1473,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .has-header-image.twentyseventeen-front-page .site-branding, .has-header-video.twentyseventeen-front-page .site-branding, .has-header-image.home.blog .site-branding, .has-header-video.home.blog .site-branding {
   display: table-cell;
   height: 100%;
-  vertical-align: bottom; }
+  vertical-align: middle; }
 
 /*--------------------------------------------------------------
 13.2 Front Page
@@ -1885,7 +1885,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 --------------------------------------------------------------*/
 .site-footer {
   color: #fafafa;
-  background-color: #383838; }
+  background-color: #08364f; }
   .site-footer .wrap {
     padding-bottom: 1.5em;
     padding-top: 2em; }
@@ -1939,6 +1939,36 @@ body:not(.twentyseventeen-front-page) .entry-header {
     padding: 0 0.2em 0 0.4em; }
     .site-info span[role=separator]::before {
       content: '\002f'; }
+
+.list-social {
+  list-style: none;
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto !important; }
+  .list-social li {
+    width: 20%;
+    max-width: 30%;
+    padding: .5em 30px 2em !important;
+    display: inline-block;
+    vertical-align: middle; }
+    .list-social li a {
+      color: #fff !important;
+      text-decoration: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      -webkit-transition: none; }
+    .list-social li i {
+      font-size: 2.75em;
+      padding-bottom: 10px; }
+
+#nav_menu-3 {
+  text-align: center; }
+  #nav_menu-3 li {
+    display: inline-block;
+    padding: 1em;
+    color: #fff; }
+    #nav_menu-3 li a {
+      color: #fff; }
 
 /*--------------------------------------------------------------
 14.0 Comments
@@ -2546,6 +2576,11 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
 
 .home .site-branding .wrap {
   text-align: center; }
+  .home .site-branding .wrap .site-title {
+    display: none; }
+  .home .site-branding .wrap .site-description {
+    color: #08364f;
+    font-weight: bold; }
 
 .home .custom-logo-link {
   display: block;
@@ -2559,7 +2594,7 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
 
 .page-one-column .panel-content .wrap {
   max-width: 100%;
-  padding: 0px; }
+  padding: 0; }
   .page-one-column .panel-content .wrap .entry-header {
     display: none; }
   .page-one-column .panel-content .wrap .destacado_home,
@@ -2648,9 +2683,10 @@ button[name="jetpack_subscriptions_widget"] {
 .wcorg-sponsor-level-plata,
 .wcorg-sponsor-level-bronce,
 .wcorg-sponsor-level-micro {
+  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: -webkit-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2670,20 +2706,66 @@ button[name="jetpack_subscriptions_widget"] {
   .wcorg-sponsor-level-micro h2 {
     display: block;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding: 2em 0; }
 
-.wcorg-sponsor-level-platino > .wcorg-sponsor {
+.wcb_widget_sponsors .sponsor-level h4 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 2em 0; }
+
+.wcb_widget_sponsors .sponsor-level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-decoration: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-transition: none;
+  transition: none; }
+  .wcb_widget_sponsors .sponsor-level .sponsor-logo {
+    text-decoration: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-transition: none;
+    transition: none; }
+
+.wcorg-sponsor-level-bronce,
+.wcorg-sponsor-level-micro {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left; }
+
+.wcorg-sponsor-level-platino > .wcorg-sponsor > .sponsor-logo {
   width: 100%; }
 
-.wcorg-sponsor-level-oro > .wcorg-sponsor {
+.wcorg-sponsor-level-oro > .wcorg-sponsor > .sponsor-logo {
   width: 49%; }
 
-.wcorg-sponsor-level-plata > .wcorg-sponsor {
+.wcorg-sponsor-level-plata > .wcorg-sponsor > .sponsor-logo {
   width: 32%; }
 
-.wcorg-sponsor-level-bronce > .wcorg-sponsor,
-.wcorg-sponsor-level-micro > .wcorg-sponsor {
+.wcorg-sponsor-level-bronce > .wcorg-sponsor > .sponsor-logo,
+.wcorg-sponsor-level-micro > .wcorg-sponsor > .sponsor-logo {
   width: 24%; }
+
+.wcorg-sponsor {
+  padding: 1em; }
+  .wcorg-sponsor h3 {
+    display: none; }
 
 /*--------------------------------------------------------------
 18.0 SVGs Fallbacks
@@ -3293,6 +3375,20 @@ button[name="jetpack_subscriptions_widget"] {
 @media screen and (max-width: 48.875em) and (min-width: 48em) {
   .admin-bar .site-navigation-fixed.navigation-top, .admin-bar .site-navigation-hidden.navigation-top {
     top: 46px; } }
+
+@media only screen and (max-width: 425px) {
+  .list-social li {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 30px; }
+    .list-social li i {
+      padding-bottom: 5px; }
+  .wcorg-sponsor-level-oro > .wcorg-sponsor,
+  .wcorg-sponsor-level-plata > .wcorg-sponsor,
+  .wcorg-sponsor-level-bronce > .wcorg-sponsor,
+  .wcorg-sponsor-level-micro > .wcorg-sponsor {
+    width: 100%; } }
 
 /*--------------------------------------------------------------
 20.0 Print
