@@ -106,8 +106,7 @@
 
 .prev.page-numbers, .next.page-numbers {
   background-color: $silver3;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  @include border-radius(2px);
   display: inline-block;
   font-size: 24px;
   font-size: 1.5rem;
@@ -116,8 +115,7 @@
 }
 
 .prev.page-numbers, .next.page-numbers {
-  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+  @include transition(background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out);
 }
 
 .prev.page-numbers {
@@ -290,8 +288,7 @@ body:not(.twentyseventeen-front-page) {
     display: inline-block;
     a.post-edit-link {
       background-color: $black2;
-      -webkit-border-radius: 2px;
-      border-radius: 2px;
+      @include border-radius(2px);
       -webkit-box-shadow: none;
       box-shadow: none;
       color: $white1;
@@ -301,8 +298,7 @@ body:not(.twentyseventeen-front-page) {
       font-weight: 800;
       margin-top: 2em;
       padding: 0.7em 2em;
-      -webkit-transition: background-color 0.2s ease-in-out;
-      transition: background-color 0.2s ease-in-out;
+      @include transition(background-color 0.2s ease-in-out);
       white-space: nowrap;
       &:hover, &:focus {
         background-color: $gray1;

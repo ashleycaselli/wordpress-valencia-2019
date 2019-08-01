@@ -128,7 +128,7 @@
 
 /* Recursos */
 .wp-block-button__link {
-  border-radius: 5px;
+  @include border-radius(5px);
 }
 
 
@@ -204,15 +204,11 @@ button[name="jetpack_subscriptions_widget"] {
 .wcorg-sponsor-level-plata,
 .wcorg-sponsor-level-bronce,
 .wcorg-sponsor-level-micro {
-  display: flex;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
+  @include flexbox;
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  @include flex-direction(row);
+  @include align-items(center);
   h2 {
     display: block;
     width: 100%;
@@ -229,29 +225,21 @@ button[name="jetpack_subscriptions_widget"] {
 }
 
 .wcb_widget_sponsors .sponsor-level {
-  display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-ms-flex-align: center;
-	align-items: center;
+  @include flexbox;
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  @include flex-direction(row);
+  @include align-items(center);
 	text-decoration: none !important;
 	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
-	-webkit-transition: none;
-  transition: none;
+  box-shadow: none !important;
+  @include transition(none);
   
   .sponsor-logo {
     text-decoration: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    -webkit-transition: none;
-    transition: none;
+    @include transition(none);
   }
 }
 

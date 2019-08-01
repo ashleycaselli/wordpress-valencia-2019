@@ -16,8 +16,7 @@
   a {
     color: $white1;
     font-weight: 600;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
+    @include transition(color 0.2s);
     text-transform: uppercase;
   }
   .current-menu-item > a, .current_page_item > a {

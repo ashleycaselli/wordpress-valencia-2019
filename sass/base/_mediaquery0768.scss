@@ -172,8 +172,8 @@
     }
     ul {
       ul {
-        background: #fff;
-        border: 1px solid #bbb;
+        background: $white1;
+        border: 1px solid $gray2;
         left: -999em;
         padding: 0;
         position: absolute;
@@ -220,11 +220,11 @@
           }
         }
         &.menu-item-has-children:before, &.page_item_has_children:before {
-          border-color: transparent transparent #bbb;
+          border-color: transparent transparent $gray2;
           bottom: 0;
         }
         &.menu-item-has-children:after, &.page_item_has_children:after {
-          border-color: transparent transparent #fff;
+          border-color: transparent transparent $white1;
         }
       }
       ul {
@@ -241,25 +241,23 @@
       }
     }
     li li {
-      -webkit-transition: background-color 0.2s ease-in-out;
-      transition: background-color 0.2s ease-in-out;
+      @include transition(background-color 0.2s ease-in-out);
       &:hover, &.focus {
-        background: #767676;
+        background: $gray1;
       }
       a {
-        -webkit-transition: color 0.3s ease-in-out;
-        transition: color 0.3s ease-in-out;
+        @include transition(color 0.3s ease-in-out);
       }
       &.focus > a, &:focus > a, &:hover > a {
-        color: #fff;
+        color: $white1;
       }
       a {
         &:hover, &:focus {
-          color: #fff;
+          color: $white1;
         }
       }
       &.current_page_item a:hover, &.current-menu-item a:hover, &.current_page_item a:focus, &.current-menu-item a:focus {
-        color: #fff;
+        color: $white1;
       }
     }
     ul li {
@@ -322,7 +320,7 @@
         /* IE 9 */
         transform: rotate(90deg);
       }
-      color: #fff;
+      color: $white1;
       top: 2em;
     }
     .navigation-top .menu-scroll-down {
