@@ -28,8 +28,13 @@ function lint() {
 
 function watch() {
 	livereload.listen();
-	gulp.watch( 'sass/**/*.scss', gulp.series( lint, css ) );
+	gulp.watch( 'sass/**/*.scss', ['copy-folder'], gulp.series( lint, css ) );
 }
+
+gulp.task('copy-folder', function() {  
+	gulp.src('sass/**/*.scss')
+	  .pipe(gulp.dest('./test'));
+  });
 
 exports.css = css;
 exports.lint = lint;
