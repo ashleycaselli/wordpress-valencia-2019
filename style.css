@@ -224,6 +224,8 @@ template, [hidden] {
   .screen-reader-text:focus {
     background-color: #f1f1f1;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
@@ -622,6 +624,8 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
   border: 1px solid #bbb;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   display: block;
   padding: 0.7em;
   width: 100%; }
@@ -632,6 +636,8 @@ textarea {
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
   border: 1px solid #bbb;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   display: block;
   padding: 0.7em;
   width: 100%; }
@@ -647,6 +653,8 @@ textarea:focus {
 select {
   border: 1px solid #bbb;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   height: 3em;
   max-width: 100%; }
 
@@ -663,6 +671,8 @@ button {
   background-color: #222;
   border: 0;
   border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
@@ -681,6 +691,8 @@ input[type="button"], input[type="submit"] {
   background-color: #222;
   border: 0;
   border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
@@ -1645,6 +1657,8 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .prev.page-numbers, .next.page-numbers {
   background-color: #ddd;
   border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   display: inline-block;
   font-size: 24px;
   font-size: 1.5rem;
@@ -1783,6 +1797,8 @@ body:not(.twentyseventeen-front-page) .entry-header {
     .entry-footer .edit-link a.post-edit-link {
       background-color: #222;
       border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
       -webkit-box-shadow: none;
       box-shadow: none;
       color: #fff;
@@ -1908,6 +1924,8 @@ body:not(.twentyseventeen-front-page) .entry-header {
   .social-navigation a {
     background-color: #767676;
     border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
     color: #fff;
     display: inline-block;
     height: 40px;
@@ -1956,7 +1974,8 @@ body:not(.twentyseventeen-front-page) .entry-header {
       text-decoration: none !important;
       -webkit-box-shadow: none !important;
       box-shadow: none !important;
-      -webkit-transition: none; }
+      -webkit-transition: none;
+      transition: none; }
     .list-social li i {
       font-size: 2.75em;
       padding-bottom: 10px; }
@@ -2621,7 +2640,9 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
 
 /* Recursos */
 .wp-block-button__link {
-  border-radius: 5px; }
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
 
 .jetpack_subscription_widget h2.widget-title {
   font-size: 1.4em;
@@ -2683,21 +2704,25 @@ button[name="jetpack_subscriptions_widget"] {
 .wcorg-sponsor-level-plata,
 .wcorg-sponsor-level-bronce,
 .wcorg-sponsor-level-micro {
-  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-pack: center;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center; }
   .wcorg-sponsor-level-platino h2,
   .wcorg-sponsor-level-oro h2,
@@ -2719,15 +2744,20 @@ button[name="jetpack_subscriptions_widget"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   -webkit-box-pack: center;
           justify-content: center;
+  -ms-flex-pack: center;
+  -moz-flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -moz-align-items: center;
+  -ms-align-items: center;
   -ms-flex-align: center;
   -webkit-box-align: center;
           align-items: center;
