@@ -15,7 +15,7 @@
     "@wordpress/stylelint-config": "^20.0.2",
     "autoprefixer": "9.5.1",
     "gulp": "4.0.2",
-    "gulp-livereload": "4.0.1",
+    "gulp-livereload": "4.0.2",
     "gulp-postcss": "8.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-stylelint": "^13.0.0",
