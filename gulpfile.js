@@ -5,7 +5,7 @@ var stylelint = require( 'gulp-stylelint' );
 var autoprefixer = require( 'autoprefixer' );
 var livereload = require('gulp-livereload');
 
-function css() {
+gulp.task('css', function() {
 	var processors = [
 		autoprefixer( { browsers: ['last 2 versions'] } )
 	];
@@ -14,9 +14,9 @@ function css() {
 		.pipe( postcss( processors ) )
 		.pipe( gulp.dest( '.' ) )
 		.pipe( livereload() );
-}
+});
 
-function lint() {
+gulp.task('lint', function() {
 	return gulp.src( './sass/*.scss' )
 		.pipe( stylelint( {
 			reporters: [ {
@@ -24,18 +24,16 @@ function lint() {
 				console: true
 			} ]
 		} ) )
-}
+});
 
-function watch() {
+gulp.task('watch', function() {
 	livereload.listen();
-	gulp.watch( 'sass/**/*.scss', ['copy-folder'], gulp.series( lint, css ) );
-}
+	gulp.watch( 'sass/**/*.scss', gulp.series('copy-folder'), gulp.series( 'lint', 'css' ) );
+});
 
 gulp.task('copy-folder', function() {  
 	gulp.src('sass/**/*.scss')
 	  .pipe(gulp.dest('./test'));
   });
 
-exports.css = css;
-exports.lint = lint;
-exports.default = gulp.series( lint, css, watch );
+exports.default = gulp.series( 'lint', 'css', 'watch' );
