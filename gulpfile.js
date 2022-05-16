@@ -1,7 +1,7 @@
 const gulp = require( 'gulp' );
 const sass = require( 'gulp-sass' )(require( 'sass' ));
 var postcss = require( 'gulp-postcss' );
-var stylelint = require( 'gulp-stylelint' );
+var stylelint = require( '@ashleycaselli/gulp-stylelint' );
 var autoprefixer = require( 'autoprefixer' );
 var livereload = require('gulp-livereload');
 
